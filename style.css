@@ -25,7 +25,9 @@ header {
 }
 
 header h1 {
+  flex: 1;
   text-align: center;
+  margin: 0;
   font-size: 2.2rem;
   letter-spacing: 2px;
 }
@@ -47,6 +49,35 @@ header a {
 
 header a:hover {
   color: #facc15; /* yellow highlight */
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+#themeBtn{
+  font-size: size 20px; ;
+  padding: 6px 12px;
+   border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  color : white;
+  transition: all 0.3s ease;
+  box-shadow : 0 4px 8px rgba(0,0,0,0,2);
+  padding: 0 20px;
+}
+
+#themeBtn:hover{
+  transform: scale(1.2);
+  background-color: #555;
+}
+
+.dark #themeBtn{
+  background-color: #f1f1f1;
+  color: #000
 }
 
 /* ----------------- SECTIONS ----------------- */
@@ -83,7 +114,7 @@ section h2::after {
 }
 
 #about img {
-  max-width: 160px;
+  max-width: 200px;
   height: auto;
   border-radius: 50%;
   margin-top: 20px;
@@ -178,4 +209,28 @@ footer {
     flex-direction: column;
     gap: 15px;
   }
+}
+
+/* --------------DARK MODE--------------- */
+body.dark{
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark header {
+  background-color: #000080;
+}
+
+body.dark .project-card {
+  background-color: #1c1c1c; 
+  color: #f1f1f1;
+}
+
+body.dark .project-card {
+  background-color: #1c1c1c; /* dark cards */
+  color: #f1f1f1;
+}
+
+body.dark .project-card a {
+  color: #facc15; 
 }
