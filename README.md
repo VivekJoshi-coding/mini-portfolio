@@ -16,4 +16,4 @@ Read and watched few internet resources.
 ## Links 
 
 - GitHub repository: https://github.com/VivekJoshi-coding/mini-portfolio.git
-- Live demo: not yet but coming soon
+- Live demo: not yet but coming soon# mini-portfolio
